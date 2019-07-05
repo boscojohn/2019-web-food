@@ -9,7 +9,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Karma', serif;}
 /* tops */
 
 .tops{
-	font-size: :24px;
+	font-size: 24px;
 }
 
 .tops > div {border:1px solid blue; padding: 16px;}
@@ -17,3 +17,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Karma', serif;}
 .tops > .navi:hover{background-color: #ccc;}
 .tops > .mail {float: right;}
 .tops > .logo {text-align: center;}
+
+/* foods */
+.foods {margin-top: 50px;}
+.food{ width: 23%; margin: 0 0.5%; float: left; text-align: center; }
+	.food-tit {font-size: 24px; margin: 12px 0 16px 0; color:black;}
