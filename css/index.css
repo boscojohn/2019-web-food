@@ -18,8 +18,8 @@ html, body {font-family: 'Karma', serif; font-size: 16px;}
 
 /* foods */
 .foods{ border-bottom: 1px solid #ccc;}
-.foods > ul {margin-top: 50px;}
-.food{ width: 23%; margin: 0 0.5%; float: left; text-align: center; }
+.foods > ul {margin-top: 50px; display:flex; flex-wrap:wrap; justify-content:space-between;}
+.food{ text-align: center; flex: 24% 0 1; margin-right: 1%; margin-bottom: 1%;}
 	.food-tit {font-size: 24px; margin: 12px 0 16px 0; color:black;}
 .pager {width: 240px; margin: 50px auto;}
 	.pager > li {float: left; width: 40px; height: 40px;  text-align: center; line-height: 40px; cursor: pointer;}  /*  line-height:40px 글자크기를 나타날때 중요함. */
@@ -44,7 +44,7 @@ html, body {font-family: 'Karma', serif; font-size: 16px;}
 .blog {margin: 0 2%;}
 .footers h3 {font-size: 24px; padding: 12px 0;} 
 .footers .copywright {padding: 12px 0;} 
-.blog > .post:not(:last-child) { border-bottom: 1px solid #ccc;}
+.posts > .post:not(:last-child) { border-bottom: 1px solid #ccc;}
 .blog .post {padding: 12px 8px 8px 8px; cursor: pointer;}
 .blog .post:hover {background-color: #ccc;}
 .blog .pic {width: 15%; float: left;}
@@ -57,3 +57,22 @@ html, body {font-family: 'Karma', serif; font-size: 16px;}
 
 .tag {display: inline-block; background-color: #ccc; padding: 4px 6px; margin: 0 8px 8px 0;}
 .tag-list > :first-child{background-color: #111; color:#f8f8f8; font-size:18px;}
+
+/* 태블릿 세로  */
+@media screen and (max-width:992px) {
+
+
+}
+/* 스마트폰 가로 */
+@media screen and (max-width:768px) {
+
+	.foods > ul { justify-content:space-evenly;}
+   .food{  flex: 48% 0 1; }
+	
+}
+
+/* 스마트폰 세로 */
+@media screen and (max-width:576px) {
+
+	.food{ flex: 96% 0 1;}
+}
