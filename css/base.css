@@ -21,6 +21,10 @@ html, body{
 	color: #222;
 	
 }
+
+
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+
 /* 순서를 나타내는 리스트 */
 ol,ul, li, dl, dt, dd {
 	list-style: none; /* 순서를 나타내는 순서, 점표시 제거 */
@@ -43,10 +47,9 @@ img{
 	clear: both;
 }
 
-.img {
-	width: 100%;
-}
+.img { 	width: 100%; }
 
-.img-wrap {
-	line-height: 0.9;  /* line-height: 0.9; */
-}
+.img2 { max-width: 100%; }
+
+
+/* .img-wrap { 	line-height: 0.9;  /* line-height: 0.9;  } */

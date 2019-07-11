@@ -1,17 +1,15 @@
 /* 공통사항 */
 @import url('https://fonts.googleapis.com/css?family=Karma&display=swap');  /* 카르마끌꼴 */
 
-body,h1,h2,h3,h4,h5,h6 {font-family: 'Karma', serif;}
+/* 글자는 상속이 됨 - body태그 */
+html, body {font-family: 'Karma', serif; font-size: 16px;}
 .wrap{
 	width:100%; max-width: 1180px; margin: 0 auto;
 }
 
 /* tops */
 
-.tops{
-	font-size: 24px;
-}
-
+.tops{ 	font-size: 24px; }
 .tops > div { padding: 16px;} /* border:1px solid blue; */
 .tops > .navi {float: left; cursor: pointer;}
 .tops > .navi:hover{background-color: #ccc;}
@@ -19,6 +17,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Karma', serif;}
 .tops > .logo {text-align: center;}
 
 /* foods */
+.foods{ border-bottom: 1px solid #ccc;}
 .foods > ul {margin-top: 50px;}
 .food{ width: 23%; margin: 0 0.5%; float: left; text-align: center; }
 	.food-tit {font-size: 24px; margin: 12px 0 16px 0; color:black;}
@@ -27,3 +26,34 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Karma', serif;}
 	.pager > li:hover {background-color: #111; color: #f8f8f8;}
 	.pager > li:nth-child(2) {background-color: #111; color: #f8f8f8;}
 	.pager > li:nth-child(2):hover {background-color: #ccc; color: #111;}
+
+
+	/* abouts */
+	/* abouts */
+.abouts {padding: 80px 0; border-bottom: 1px solid #999; text-align: center;}
+.abouts > h2 {margin-bottom: 50px;}
+.abouts > .tit {margin-top: 40px; font-size: 18px; font-weight: bold; color: #000;}
+.abouts > .stit {padding: 20px 0; font-style: italic;}
+
+
+
+/* footer */
+
+.footers {margin: 80px 0;}
+.footers > li {width: 32%; float:left; padding: 8px;}
+.blog {margin: 0 2%;}
+.footers h3 {font-size: 24px; padding: 12px 0;} 
+.footers .copywright {padding: 12px 0;} 
+.blog > .post:not(:last-child) { border-bottom: 1px solid #ccc;}
+.blog .post {padding: 12px 8px 8px 8px; cursor: pointer;}
+.blog .post:hover {background-color: #ccc;}
+.blog .pic {width: 15%; float: left;}
+.blog .cont {width: 80%; float: right;}
+.post h5 {font-size: 18px;}
+/* h3태그 노말처리가 됨  - base.css*/
+
+
+
+
+.tag {display: inline-block; background-color: #ccc; padding: 4px 6px; margin: 0 8px 8px 0;}
+.tag-list > :first-child{background-color: #111; color:#f8f8f8; font-size:18px;}
